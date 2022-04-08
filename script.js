@@ -4,8 +4,7 @@
  */
 
 const container = document.querySelector(".container");
-const button = document.querySelector(".cta-button");
+const button = document.querySelector(".button");
 
 // Log when the button is clicked in the console.
-button.addEventListener("click", () => {
-}, false);
+button.addEventListener("click", function(){ alert("You found me!"); });

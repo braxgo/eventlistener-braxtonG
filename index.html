@@ -1,18 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Events Aplenty</title>
-
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <main>
-      <article class="container">
-        <h1>Events: A Demonstration</h1>
-        <button class="cta-button">Click me!</button>
-      </article>
-    </main>
-  </body>
-</html>
+<style>
+  .container {
+    height: 950px;
+    position: relative;
+    border: 3px solid blue;
+  }
+  
+  .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 3px solid transparent;
+  }
+  .button {
+    position: absolute;
+    top:50%;
+    background-color:#fff;
+    color: #fff;
+    border:none;
+    border-radius:5px;
+  }
+  .button:hover {
+      background-color:#002ead;
+      transition: 0.7s;
+  }
+  .button:focus {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px #5a01a7;
+}
+  </style>
+  
+  <div class="container">
+    <div class="center">
+      <button type="button" class="button">Secret Button</button>
+    </div>
+  </div>
